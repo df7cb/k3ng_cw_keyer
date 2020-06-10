@@ -6833,6 +6833,8 @@ void tx_and_sidetone_key (int state)
 
   check_ptt_tail();
 
+  digitalWrite(LED_BUILTIN, state);
+  Serial.write(state ? '^' : '_');
 
 }
 
@@ -17527,6 +17529,7 @@ void initialize_pins() {
     pinMode(potentiometer_enable_pin,INPUT_PULLUP);
   }
   
+  pinMode(LED_BUILTIN, OUTPUT);
 } //initialize_pins()
 
 //---------------------------------------------------------------------
