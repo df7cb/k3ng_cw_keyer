@@ -4,7 +4,7 @@
 
 #define paddle_left 2
 #define paddle_right 3
-#define tx_key_line_1 11       // (high = key down/tx on)
+#define tx_key_line_1 12       // (high = key down/tx on)
 #define tx_key_line_2 0
 #define tx_key_line_3 0
 #define tx_key_line_4 0
@@ -158,4 +158,3 @@ FEATURE_SIDETONE_SWITCH
   #error "Multiple pin_settings.h files included somehow..."
 
 #endif //keyer_pin_settings_h
-
